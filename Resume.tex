@@ -1,0 +1,156 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=0.75in}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+
+\raggedright
+
+% Define custom section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+% Set itemize to use less spacing
+\setlist[itemize]{noitemsep, topsep=0pt, left=0pt}
+
+
+\newcommand{\contact}[7]{
+    \begin{center}
+        \textbf{\LARGE #1} \\
+        \vspace{0.1cm}
+        \begin{tabular}{c}
+            #2 \, | \, #3 \, | \, \href{mailto:#4}{#4}
+        \end{tabular} \\
+        \vspace{0.1cm}
+        \small
+        \begin{tabular}{ccc}
+            \href{#5}{LinkedIn}: \texttt{#5} & \href{#6}{GitHub}: \texttt{#6} & \href{#7}{Blog}: \texttt{#7}
+        \end{tabular}
+    \end{center}
+    \vspace{-0.4cm} % Adjust vertical space
+    \begin{itemize}[leftmargin=0.5cm]
+        \item Experienced in creating high quality pull requests with solid software design and test coverage under continuous integration and code review workflow.
+        \item Proficient in project management, collaboration, technical communication and documentation.
+        \item Demonstrated adaptability in swiftly acquiring and applying new concepts independently.
+    \end{itemize}
+}
+
+\begin{document}
+
+% Contact Information
+\contact{\color{NavyBlue}Raine Yang}{\color{NavyBlue}Toronto, ON}{+1 (437) 376-1066}{raine.yang@mail.utoronto.ca}{linkedin.com/in/raine-yang/}{github.com/Raine-Yang-UofT}{raineyang.hashnode.dev/}
+
+% Education
+\section*{\color{NavyBlue}Education}
+\textbf{Computer Science Specialist ASIP Program \& Math Minor} \\
+\textbf{University of Toronto - Victoria College} \\
+\textit{09/2023 - Present} \textit{\textbf{GPA: 4.0}} \\
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\subsection*{Relevant Courses:}
+\begin{itemize}[leftmargin=0.7cm, labelsep=0.5cm]
+    \item Software Design
+    \item Computer Organization
+    \item Theory of Computation
+\end{itemize}
+\end{minipage}%
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\subsection*{Awards:}
+\begin{itemize}[leftmargin=0.7cm, labelsep=0.5cm]
+    \item University of Toronto Scholar
+    \item The Mary Mounfield Scholarship
+    \item Clifton Graham Roberts Admission Award
+\end{itemize}
+\end{minipage}
+
+\vspace{0.1cm}
+
+% Work Experience
+\begin{multicols}{2}
+\noindent
+\section*{\color{NavyBlue}Work Experience}
+
+\textbf{\large{Software Developer}} \\
+\textbf{Students Developing Software Team - University of Toronto} \\
+\textit{05/2024 -- Present} \\
+\begin{itemize}
+    \item Contribute to \textbf{PythonTA} static code analysis tool used by thousands of first-year CS students at the University of Toronto through new features implementation, bug fixes, code refactoring, and test update. Ensured code quality and maintainability through standardized \textbf{continuous integration} and \textbf{code review} workflows.
+    \item Effectively communicate project progress through weekly presentations and extensive documentation on technical blog, fostering team collaboration and knowledge sharing.
+\end{itemize}
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{\large{Software Developer Intern}}\\
+\textbf{RoboTerra} \\
+\textit{08/2020 -- 08/2023} \\
+\begin{itemize}
+    \item Implemented a glass surface detection algorithm in \textbf{Python} and integrated it with \textbf{ROS} Gmapping to improve lidar mapping accuracy by 50\% in environments with glass or reflective walls.
+    \item Designed a face-recognition-based light alarm clock using \textbf{Python's OpenCV} and textbf{Arduino}, establishing a distributed system via \textbf{ROS2}. Created a \textbf{SolidWorks} model for the prototype.
+    \item Engineered API libraries for \textbf{Arduino} sensors, seamlessly integrating them into the company's backend repository, and provided detailed documentation for frontend development.
+    \item Provided technical assistance for the Youth Silicon Valley AI Contest, including product repair, programming, and contest field maintenance.
+\end{itemize}
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{\large{AP Computer Science A Instructor}} \\
+\textbf{Xi'an Gaoxin No.1 High School} \\
+\textit{05/2022 -- 01/2023} \\
+\begin{itemize}
+    \item Solely instructed a class of 25 grade 12 students in \textbf{Java programming} and \textbf{AP Computer Science A} at Xi’an Gaoxin No.1 High School.
+\end{itemize}
+
+\columnbreak
+
+% Skills
+\section*{\color{NavyBlue}Skills}
+\noindent
+\begin{tabular}{l|l|l|l|l}
+\textbf{Python} & \textbf{C\#} & \textbf{Java} & \textbf{Rust} & \textbf{Arduino} \\
+\end{tabular}
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{l|l|l|l}
+\textbf{Unity} & \textbf{ROS/ROS2} & \textbf{Git} & \textbf{Linux} \\
+\end{tabular}
+
+% Personal Projects
+\section*{\color{NavyBlue}Personal Projects}
+\noindent
+\textbf{Technical Blog Writing} \hfill \\
+\textit{10/2020 -- Present} \\
+\begin{itemize}
+    \item Published \textbf{200+} technical blogs on \textbf{Hashnode} and \textbf{CSDN}, documenting problem-solving processes and self-taught topics. Garnered 20,000+ views and 300+ followers across platforms.
+    \item Links: Hashnode (raineyang.hashnode.dev) CSDN (blog.csdn.net/Raine\_Yang).
+\end{itemize}
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{Game Developer - University of Toronto Game Development Club} \\
+\textit{02/2024 -- Present} \\
+\begin{itemize}
+    \item Lead the development of video game project \textit{What The Thunder Said} in \textbf{Unity} and \textbf{C\#}.
+    \item Designed and implemented the comprehensive back-end architecture of the game system, applying \textbf{object-oriented design principles and patterns} to ensure scalability and maintainability, resulting in a robust foundation for future game updates and features.
+\end{itemize}
+
+\vspace{0.25cm}
+
+\noindent
+\textbf{Manhole Watchdog - IEEE New Hacks Hackathon} \\
+\textit{11/2023} \\
+\begin{itemize}
+    \item Engineered an intelligent manhole monitoring system during \textbf{IEEE New Hacks Hackathorn}. Independently implemented the hardware for displacement and tilt detection using \textbf{Arduino} while orchestrating effective team collaboration to create a solution addressing misplaced, lost, or stolen manholes.
+    \item Link: GitHub (github.com/Raine-Yang-UofT/New-Hacks-2023-Intelligent-Manhole)
+\end{itemize}
+\end{multicols}
+
+\end{document}
